@@ -1,0 +1,43 @@
+.caixa_produtos_detaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+
+    background: #E9E9E9;
+    border-radius: 10px;
+
+}
+
+
+.produtos_destaque {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 188px;
+    height: 267px;
+    margin: 5%;
+    padding: 5px;
+}
+
+.img-produtos_destaque {
+    display: flex;
+    width: 179.28px;
+    height: 197.4px;
+
+    background: #a0a0a0;
+    border-radius: 10px;
+
+}
+
+.descricao_produtos_destaque {
+    display: grid;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+
