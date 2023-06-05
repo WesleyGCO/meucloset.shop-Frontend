@@ -1,3 +1,39 @@
+.menu_icones_cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.logo_imagem {
+    width: 500px;
+}
+
+.icones_direita,
+.icones_esquerda {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.caixa_inicio{
+    display: block;
+}
+
+.icone {
+    margin: 0 20% 0 20%;
+
+}
+
+.caixa_icones_cabecalho {
+    background-color: #FFF;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+}
+
+
+
 .caixa_produtos_detaque {
     display: flex;
     align-items: center;
