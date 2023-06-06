@@ -18,9 +18,12 @@
 
 .caixa_inicio{
     display: block;
+
 }
 
-
+.logo_central{
+    height: 100px;
+}
 .icones_direita,
 .icones_esquerda {
     display: flex;
@@ -30,6 +33,7 @@
 
 .icone {
     margin: 0 20% 0 20%;
+    height: 45px;
 
 }
 
@@ -59,9 +63,10 @@
 }
 .caixa_icones_cabecalho {
     background-color: #FFF;
-    height: auto;
+    height: 150px;
     border-radius: 0 0 10px 10px;
     display: flex;
+    align-items: center;
 }
 
 
