@@ -109,7 +109,7 @@
 
 
     background: #E9E9E9;
-    border-radius: 10px;
+
 
 }
 
@@ -199,4 +199,31 @@
 
 .page-container.blur .page-overlay {
     display: block;
+}
+
+.rodape {
+    background-color: #DAA520;
+    padding: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape .esquerda {
+    text-align: left;
+    color: white;
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+.rodape .centro {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.rodape .direita {
+    text-align: right;
+    color: white;
+    margin-bottom: 10px;
 }
