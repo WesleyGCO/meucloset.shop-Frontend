@@ -16,3 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("menuIcon").addEventListener("click", toggleSidebar);
     pageOverlay.addEventListener("click", closeSidebar);
 });
+
