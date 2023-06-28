@@ -1,68 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca de Produto</title>
     <link rel="stylesheet" href="../css/style_produtos.css">
-    
+
 </head>
+
 <body>
     <div class="busca_produtos">
         <div class="filtros">
             <div class="pesquisa">
                 <div class="box_pesquisa">
-                    <input type="text" id="" placeholder="Busque um produto" class="input_pesquisa">  
+                    <input type="text" id="" placeholder="BUSQUE UM PRODUTO" class="input_pesquisa">
+                </div>
+            </div>
+            <div id="linha-horizontal"></div>
+
+            <div class="tipo_produto">
+                <legend class="titulo_tipo_produto">Escolha o tipo de produto:</legend>
+                <div class="checkbox_tipo_produtos">
+                    <div>
+                        <input type="checkbox" id="scales" name="scales">
+                        <label for="scales">Camisetas</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">Calças</label>
+                    </div>
+                </div>
+            </div>
+            <div id="linha-horizontal"></div>
+            <div class="cor_produto">
+                <legend class="titulo_tipo_produto">Escolha a cor do produto:</legend>
+                <div class="checkbox_tipo_produtos">
+                    <div>
+                        <input type="checkbox" id="branca" name="branca">
+                        <label for="branca">Branca</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="preta" name="preta">
+                        <label for="preta">Preta</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="azul" name="azul">
+                        <label for="azul">Azul</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="vermelha" name="vermelha">
+                        <label for="vermelha">Vermelha</label>
+                    </div>
                 </div>
             </div>
             
-                <div class="tipo_produto">
-                        <legend class="titulo_tipo_produto">Escolha o tipo de produto:</legend>
-                        <div class="checkbox_tipo_produtos">
-                            <div>
-                                <input type="checkbox" id="scales" name="scales">
-                                <label for="scales">Camisetas</label>
-                            </div>
-                        
-                            <div>
-                                <input type="checkbox" id="horns" name="horns">
-                                <label for="horns">Calças</label>
-                            </div>
-                        </div>
+            <div id="linha-horizontal"></div>
+            <div class="valor_produto">
+                <label for="">Valor desejado:</label>
+                <div class="formata_valor">
+                    <label for="">R$</label><input placeholder="VALOR MÁXIMO DESEJADO" type="Text" size="12" onKeyUp="mascaraMoeda(this, event)"
+                        value="">
                 </div>
-                <div class="cor_produto">
-                    <legend class="titulo_tipo_produto">Escolha a cor do produto:</legend>
-                    <div class="checkbox_tipo_produtos">
-                        <div>
-                            <input type="checkbox" id="branca" name="branca">
-                            <label for="branca">Branca</label>
-                        </div>
-                
-                        <div>
-                            <input type="checkbox" id="preta" name="preta">
-                            <label for="preta">Preta</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="azul" name="azul">
-                            <label for="azul">Azul</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="vermelha" name="vermelha">
-                            <label for="vermelha">Vermelha</label>
-                        </div>
-                    </div>
-                </div>
-                <form action="#">
-                    <p class="range-field">
-                        <input type="range" id="test5" min="0" max="100" />
-                    </p>
-                </form>
-                <div id="slider_valor">
-                    
-                </div>
-        </div>
+            </div>
+            <div id="slider_valor">
 
+            </div>
+        </div>
+        <div class="lista_produtos_scroll">
+            <div id='scroll'>
+
+                <div class="produto">Produto 1</div>
+                <div class="produto">Produto 2</div>
+                <div class="produto">Produto 3</div>
+                <div class="produto">Produto 4</div>
+                <div class="produto">Produto 5</div>
+                <div class="produto">Produto 6</div>
+                <div class="produto">Produto 7</div>
+                <div class="produto">Produto 8</div>
+                <div class="produto">Produto 9</div>
+                <div class="produto">Produto 10</div>
+                <div class="produto">Produto 1</div>
+                <div class="produto">Produto 2</div>
+                <div class="produto">Produto 3</div>
+                <div class="produto">Produto 4</div>
+                <div class="produto">Produto 5</div>
+                <div class="produto">Produto 6</div>
+                <div class="produto">Produto 7</div>
+                <div class="produto">Produto 8</div>
+                <div class="produto">Produto 9</div>
+                <div class="produto">Produto 10</div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="../js/index.js"></script>
+<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+
 </html>
