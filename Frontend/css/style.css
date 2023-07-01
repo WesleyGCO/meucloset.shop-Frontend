@@ -105,13 +105,52 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 1000px;
 
 
     background: #E9E9E9;
-    border-radius: 10px;
+
 
 }
+
+
+/*Slider de produtos da tela inicial*/
+.slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
+/*Slider de produtos da tela inicial*/
+
+
 
 
 .produtos_destaque {
@@ -147,49 +186,52 @@
     display: block;
 }
 
-.login_cadastro button:hover{
+.login_cadastro button:hover {
     background-color: #b88b1b;
 }
-.login_cadastro button{
-    
 
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            background-color: #DAA520;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+.login_cadastro button {
+
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
 .login_cadastro {
     margin-top: 20px;
     margin-left: 25%;
     cursor: pointer;
 }
 
-.tela_login{
-    width: 400px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: -400px;
-        transition: left 0.3s ease-in-out;
-        z-index: 999;
+.tela_login {
+    width: 700px;
+    height: 150vh;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
 }
 
-.tela_login.open{
-    left: 150%;
+.tela_login.open {
+    left: 43%;
+    top: 20%;
 }
 
 
 .sidebar {
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
-    width:400px;
+    width: 400px;
     background-color: #f1f1f1;
     height: 100vh;
     position: fixed;
@@ -434,5 +476,33 @@
 .close:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
+
+    .rodape {
+        background-color: #DAA520;
+        padding: 100px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rodape .esquerda {
+        text-align: left;
+        color: white;
+        margin-top: 0px;
+        font-size: 25px;
+    }
+
+    .rodape .centro {
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .rodape .direita {
+        text-align: right;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
 }
