@@ -479,31 +479,37 @@
     text-decoration: none;
 }
 
-    .rodape {
-        background-color: #DAA520;
-        padding: 100px;
-        height: 200px;
-        display: flex;
-        justify-content: space-between;
-    }
+.rodape {
+    background-color: #DAA520;
+    padding: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
 
-    .rodape .esquerda {
-        text-align: left;
-        color: white;
-        margin-top: 0px;
-        font-size: 25px;
-    }
+.rodape .esquerda {
+    text-align: left;
+    color: white;
+    margin-top: 0px;
+    font-size: 25px;
+}
 
-    .rodape .centro {
-        text-align: center;
-        color: white;
-        margin-bottom: 10px;
-        font-size: 25px;
-    }
+.rodape .centro {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
 
-    .rodape .direita {
-        text-align: right;
-        color: white;
-        margin-bottom: 10px;
-        font-size: 25px;
-    }
+.rodape .direita {
+    text-align: right;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.rodape .direita a {
+    color: white;
+    text-decoration: none;
+
+}
