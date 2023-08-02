@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.imagem_produto {
+    margin-left: 20px;
+}
+
+img {
+        max-width: 50%;
+            height: auto;
+}
