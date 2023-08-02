@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
     pageOverlay.addEventListener("click", closeSidebar);
 });
 
+
+
+
 document.addEventListener("DOMContentLoaded", function(){
     var tela_login = document.getElementById("tela_login");
     var pageContainer = document.getElementById("pageContainer");
@@ -58,18 +61,3 @@ function mascaraMoeda(campo, evento) {
     campo.value = resultado.reverse();
 }
 
-
-
-/*Slider dos produtos da tela inicial*/ 
-
-const prevButton = document.querySelector(".slider-prev");
-const nextButton = document.querySelector(".slider-next");
-const sliderContainer = document.querySelector(".slider-container");
-
-prevButton.addEventListener("click", () => {
-    sliderContainer.style.transform = "translateX(-100%)";
-});
-
-nextButton.addEventListener("click", () => {
-    sliderContainer.style.transform = "translateX(100%)";
-});

@@ -35,7 +35,8 @@
 .icone {
     margin: 0 20% 0 20%;
     height: 45px;
-
+    font-size: 40px;
+    color: #DAA520;
 }
 
 .caixa_foto_inicio {
@@ -106,11 +107,7 @@
     align-items: center;
     justify-content: center;
     height: 1000px;
-
-
     background: #E9E9E9;
-
-
 }
 
 
@@ -512,4 +509,24 @@
     color: white;
     text-decoration: none;
 
+}
+
+
+
+.botao_veja_mais{
+    color: #fff;
+    background-color: #DAA520;
+    height: 40px;
+    width: 100px;
+    border: 0px solid #DAA520;
+    border-radius: 6px;
+}
+
+.divisao_ver_mais{
+    display: block;
+}
+
+
+.caixa_produtos_view{
+    
 }
