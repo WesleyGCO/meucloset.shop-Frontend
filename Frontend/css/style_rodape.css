@@ -1,7 +1,8 @@
     .rodape {
         background-color: #DAA520;
-        padding: 100px;
-        height: 200px;
+        padding: 70px;
+        height: 150px;
+        padding-top: 50px;
         display: flex;
         justify-content: space-between;
     }
@@ -10,21 +11,21 @@
         text-align: left;
         color: white;
         margin-top: 0px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .rodape .centro {
         text-align: center;
         color: white;
         margin-bottom: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .rodape .direita {
         text-align: right;
         color: white;
         margin-bottom: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .rodape .direita a {
