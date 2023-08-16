@@ -61,3 +61,5 @@ function mascaraMoeda(campo, evento) {
     campo.value = resultado.reverse();
 }
 
+
+

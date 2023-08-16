@@ -1,21 +1,23 @@
 .busca_produtos {
-    width: 1000px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
     background-color: #fbfbfb;
     display: flex;
+    margin-top: 9px;
 }
 
 .filtros {
     height: 100%;
-    width: 250px;
+    width: 401px;
     background-color: #fbfbfb;
 }
 
 .box_pesquisa {
-    width: 210px;
-    height: 50px;
-    margin-top: 30px;
-    margin-left: 10px;
+    width: 383px;
+    height: 76px;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 11px;
     background-color: #fbfbfb;
     align-items: center;
     display: flex;
@@ -24,12 +26,15 @@
     box-shadow: 0px 2px 3px 0px rgb(196, 196, 196);
 }
 
-.input_pesquisa{
+.input_pesquisa {
     border: 1px solid rgb(211, 211, 211);
     border-radius: 2px;
     padding: 7px;
     background-color: rgb(247, 247, 247);
-
+    width: 351px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .box_pesquisa input:focus {
@@ -43,10 +48,12 @@
 }
 
 .tipo_produto {
-    font-size: 15px;
+    font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 7px;
+    width: 140px;
     margin-top: 20px;
+    height: 119px;
 }
 
 .checkbox_tipo_produto {
@@ -64,10 +71,12 @@
 }
 
 .cor_produto {
-    font-size: 15px;
+    font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 7px;
+    width: 140px;
     margin-top: 20px;
+    height: 159px;
 }
 
 .checkbox_tipo_produto {
@@ -118,11 +127,12 @@
 
 .valor_produto {
 
-    font-size: 15px;
+    font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 7px;
+    width: 359px;
     margin-top: 20px;
-    display: block;
+    height: 119px;
 }
 
 
@@ -131,30 +141,113 @@
 
 #scroll {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    margin-left: 7px;
-    margin-top: 15px;
-    height: 95%;
-    overflow-y: auto;
-    grid-auto-rows: 240px;
-    width: 100%;
-
+    grid-template-columns: 525px 525px 525px 525px;
+    margin-left: 12px;
+    margin-top: 4px;
+    height: 98%;
+    grid-auto-rows: 670px;
+    width: 350%;
 }
-
 .lista_produtos_scroll {
-    width: 70%;
+    width: 100%;
     margin-left: 30px;
     margin-right: 10px;
 }
-
 .produto {
-    height: 220px;
-    width: 90%;
-    border-radius: 5px;
+    height: 630px;
+    width: 505px;
     background-color: #9c9c9c;
     padding: 5px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 22px;
     margin-right: 10px;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+/*=======================HEADER===========================*/
+
+
+.caixa_icones_cabecalho {
+    background-color: #FFF;
+    height: 250px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    border: #9c9c9c;
+}
+
+
+.icones_direita,
+.icones_esquerda {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.icone {
+    margin: 0 20% 0 20%;
+    height: 45px;
+    font-size: 65px;
+    color: #e4ad22;
+}
+
+
+.logo_central {
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================FOOTER================================*/
+
+
+.rodape {
+    background-color: #DAA520;
+    padding: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.rodape .esquerda {
+    text-align: left;
+    color: white;
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+.rodape .centro {
+    text-align: center;
+    color: white;
     margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.rodape .direita {
+    text-align: right;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.rodape .direita a {
+    color: white;
+    text-decoration: none;
+
 }
