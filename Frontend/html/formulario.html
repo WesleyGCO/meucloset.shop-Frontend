@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_formulario.css">
+    <title>Formulário de Produto</title>
+
+</head>
+
+
+    <div class="formulario">
+    <h1>Formulário de Produto</h1>
+    <form action="processar.php" method="POST">
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required>
+        <br>
+
+        <label for="descricao_curta">Descrição Curta:</label>
+        <input type="text" id="descricao_curta" name="descricao_curta" required>
+        <br>
+
+        <label for="descricao_detalhada">Descrição Detalhada:</label>
+        <input type="text" id="descricao_detalhada" name="descricao_detalhada" required>
+        <br>
+
+        <label for="valor_custo">Valor de Custo:</label>
+        <input type="number" id="valor_custo" name="valor_custo" step="0.01" required>
+        <br>
+
+        <label for="valor_venda">Valor de Venda:</label>
+        <input type="number" id="valor_venda" name="valor_venda" step="0.01" required>
+        <br>
+
+        <label for="tamanhos">Tamanhos:</label>
+        <input type="text" id="tamanhos" name="tamanhos">
+        <br>
+
+        <label for="cores">Cores:</label>
+        <input type="text" id="cores" name="cores">
+        <br>
+
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca">
+        <br>
+
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" name="categoria">
+        <br>
+
+        <label for="url_imagem">URL da Imagem:</label>
+        <input type="url" id="url_imagem" name="url_imagem">
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+
+</html>
