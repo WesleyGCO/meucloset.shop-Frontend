@@ -1,0 +1,130 @@
+
+/* ============================ CABEÇALHO / MENU SUPERIOR ======================== */
+
+.caixa_inicio {
+    display: block;
+
+}
+
+.caixa_icones_cabecalho {
+    background-color: #FFF;
+    height: 150px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icones_direita,
+.icones_esquerda {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.icone {
+    margin: 0 20% 0 20%;
+    height: 45px;
+    font-size: 40px;
+    color: #DAA520;
+}
+
+
+.logo_central {
+    height: 100px;
+}
+
+
+
+/* ============================ RODAPÉ ======================== */
+
+
+.rodape {
+    background-color: #DAA520;
+    padding: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape .esquerda {
+    text-align: left;
+    color: white;
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+.rodape .centro {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.rodape .direita {
+    text-align: right;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.rodape .direita a {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+/* ============================ MENU LATERAL ======================== */
+
+
+.sidebar {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    background-color: #f1f1f1;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.page-container {
+    position: relative;
+}
+
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 10px;
+    z-index: 998;
+    display: none;
+}
+
+.page-container.blur .page-overlay {
+    display: block;
+}
+
+
