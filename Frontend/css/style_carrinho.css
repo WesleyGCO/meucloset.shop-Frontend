@@ -36,6 +36,25 @@
 
 
 
+/* ============================ CENTRAL ======================== */
+
+
+.escrita{
+    display: block;
+}
+.formas_de_pagamento {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones_pagamentos {
+    display: flex;
+
+}
+
+
 /* ============================ RODAPÉ ======================== */
 
 
