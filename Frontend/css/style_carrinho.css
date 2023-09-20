@@ -1,4 +1,3 @@
-
 /* ============================ CABEÇALHO / MENU SUPERIOR ======================== */
 
 .caixa_inicio {
@@ -16,16 +15,17 @@
 
 .icones_direita,
 .icones_esquerda {
+    font-size: 22px;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 80%;
+    justify-content: space-evenly;
 }
 
 
 .icone {
     margin: 0 20% 0 20%;
     height: 45px;
-    font-size: 40px;
+    font-size: 50px;
     color: #DAA520;
 }
 
@@ -38,22 +38,47 @@
 
 /* ============================ CENTRAL ======================== */
 
-
-.escrita{
-    display: block;
+.pagamentos {
+    display: flex;
+    justify-content: center;
 }
+
+.escrita {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
 .formas_de_pagamento {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: block;
     justify-content: center;
     align-items: center;
 }
 
 .icones_pagamentos {
     display: flex;
+    margin: 0px;
+}
+
+.icone {
+    margin: 10px;
 
 }
 
+
+
+.carrinho {
+    height: 1000px;
+    background-color: #f1f1f1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.escrita_carrinho {
+    display: flex;
+    margin-left: 90px;
+    font-size: 40px;
+    padding-top: 90px;
+}
 
 /* ============================ RODAPÉ ======================== */
 
@@ -145,5 +170,3 @@
 .page-container.blur .page-overlay {
     display: block;
 }
-
-
