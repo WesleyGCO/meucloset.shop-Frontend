@@ -1,68 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_formulario.css">
-    <title>Formulário de Produto</title>
+    <title>Formulário de Produtos</title>
+
 
 </head>
-
-
-    <div class="formulario">
-    <h1>Formulário de Produto</h1>
-    <form action="processar.php" method="POST">
-        <div class="input">
-        <label for="item">Item:</label>
-        <input type="text" id="item" name="item" required>
-        </div>
-
-        <div class="input">
-        <label for="descricao_curta">Descrição Curta:</label>
-        <input type="text" id="descricao_curta" name="descricao_curta" required>
-        </div>
-        <br>
-
-        <div class="input-large">
-        <label for="descricao_detalhada">Descrição Detalhada:</label>
-        <input type="text" id="descricao_detalhada" name="descricao_detalhada" required>
-        </div>
-        <br>
-
-        <div class="input">
-        <label for="valor_custo">Valor de Custo:</label>
-        <input type="number" id="valor_custo" name="valor_custo" step="0.01" required>
-        <label for="valor_venda">Valor de Venda:</label>
-        <input type="number" id="valor_venda" name="valor_venda" step="0.01" required>
-        </div>
-        <br>
-
-        <div class="input">
-        <label for="tamanhos">Tamanhos:</label>
-        <input type="text" id="tamanhos" name="tamanhos">
-        <label for="cores">Cores:</label>
-        <input type="text" id="cores" name="cores">
-        </div>
-        <br>
-
-        <div class="input">
-        <label for="marca">Marca:</label>
-        <input type="text" id="marca" name="marca">
-        <label for="categoria">Categoria:</label>
-        <input type="text" id="categoria" name="categoria">
-        </div>
-        <br>
-
-        <div class="input-large">
-        <label for="url_imagem">URL da Imagem:</label>
-        <input type="url" id="url_imagem" name="url_imagem">
-        </div>
-        <br>
-
-        <input type="submit" value="Enviar">
-    </form>
+<body>
+    
+    <div class="logo">
+        <img src="../imagens/logo.png" alt="Login Image" class="login-image">
     </div>
 
+    <form>
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="item">Item</label>
+                <input type="text" name="item" id="item" required>
+            </div>
+
+            <div class="campo">
+                <label for="descricao_curta">Descrição Curta</label>
+                <input type="text" name="descricao_curta" id="descricao_curta" required>
+            </div>
+
+        </fieldset>
+
+        <div class="textos">
+            <label>Descrição Detalhada</label>
+            <input type="text" id="descricao_detalhada" name="descricao_detalhada" required></input>   
+        </div>
+
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="valor_custo">Valor de Custo</label>
+                <input type="number" name="valor_custo" id="valor_custo" required>
+            </div>
+
+            <div class="campo">
+                <label for="valor_venda">Valor de Venda</label>
+                <input type="number" name="valor_venda" id="valor_venda" required>
+            </div>
+
+        </fieldset><br>
+        
+
+        <div class="tam_cor">
+            <label>Tamanhos</label>
+            <input type="radio" name="tamanho" id="tamanho_p" value="p">
+            <label for="tamanho_p">P</label>
+
+            <input type="radio" name="tamanho" id="tamanho_m" value="m">
+            <label for="tamanho_m">M</label>
+
+            <input type="radio" name="tamanho" id="tamanho_g" value="g">
+            <label for="tamanho_g">G</label>
+
+            <input type="radio" name="tamanho" id="tamanho_gg" value="gg">
+            <label for="tamanho_gg">GG</label>
+        </div>
+
+        <div class="tam_cor">
+            <label>Cores</label>
+            
+            <input type="radio" name="cor" id="cor_branco" value="branco">
+            <label for="cor_branco">Branco</label>
+
+            
+            <input type="radio" name="cor" id="cor_preto" value="preto">
+            <label for="cor_preto">Preto</label>
+
+            
+            <input type="radio" name="cor" id="cor_azul" value="azul">
+            <label for="cor_azul">Azul</label>
+
+            <input type="radio" name="cor" id="cor_vermelho" value="vermelho">
+            <label for="cor_vermelho">Vermelho</label>
+        </div><br>
+
+        
+        <div class="marcas">
+            <label for="Marcas">Marcas</label>
+            <select id="marcas">
+                <option selected disabled value="">Escolha</option>
+                <option>Caos</option>
+                <option>Perfect Way</option>
+                <option>Zara</option>
+                <option>Celine</option>
+                <option>Dior</option>
+            </select>
+        </div><br>
+
+
+        <fieldset class="grupo">
+            <div class="categorias">
+                <label>Selecione as Categorias do Produto:</label><br><br>
+
+                <input type="checkbox" id="categoria1" name="categoria1" value="m_feminina">
+                <label for="categoria1">Moda Feminina</label>
+
+                <input type="checkbox" id="categoria2" name="categoria2" value="camisetas">
+                <label for="categoria2">Camisetas</label>
+
+                <input type="checkbox" id="categoria3" name="categoria3" value="camisas">
+                <label for="categoria3">Camisas</label>
+
+                <input type="checkbox" id="categoria4" name="categoria4" value="saias">
+                <label for="categoria4">Saias</label>
+                <br>
+                <input type="checkbox" id="categoria5" name="categoria5" value="calcas">
+                <label for="categoria5">Calças</label>
+
+                <input type="checkbox" id="categoria6" name="categoria6" value="shorts">
+                <label for="categoria6">Shorts</label>
+
+                <input type="checkbox" id="categoria7" name="categoria7" value="jaquetas">
+                <label for="categoria7">Jaquetas</label>
+
+                <input type="checkbox" id="categoria8" name="categoria8" value="blusas">
+                <label for="categoria8">Blusas</label>
+
+            </div>
+        </fieldset>
+
+
+        <div class="textos">
+            <label>URL da Imagem</label>
+            <input type="url" name="url_imagem" id="url_imagem" required>
+        </div>
+
+        <br>
+        <button class="botao">Concluído</button> 
+    </form>
+        
+    
+</body>
 </html>
