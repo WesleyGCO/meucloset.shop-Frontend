@@ -63,3 +63,61 @@ function mascaraMoeda(campo, evento) {
 
 
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    var dropdown = document.getElementById('tamanho-dropdown');
+    var button = document.getElementById('tamanho-btn');
+    var tamanhoSelecionado = 'P'; // Valor padrão
+
+    function updateButtonValue(newValue) {
+        tamanhoSelecionado = newValue;
+        button.querySelector('span').textContent = tamanhoSelecionado;
+    }
+
+    var links = dropdown.getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function (event) {
+            event.preventDefault();
+            var newValue = this.getAttribute('data-value');
+            updateButtonValue(newValue);
+            dropdown.style.display = 'none';
+        });
+    }
+
+    updateButtonValue(tamanhoSelecionado);  
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var decrementButton = document.getElementById('decrement');
+    var incrementButton = document.getElementById('increment');
+    var quantityElement = document.querySelector('.quantity');
+    var totalPriceElement = document.getElementById('total-price');
+
+    var quantity = 1;
+    var pricePerUnit = 119.90;
+
+    function updateQuantityAndPrice() {
+        quantityElement.textContent = quantity;
+        var totalPrice = (quantity * pricePerUnit).toFixed(2); // Duas casas decimais
+        totalPriceElement.textContent = totalPrice;
+    }
+
+    // Evento de clique no botão de decremento
+    decrementButton.addEventListener('click', function () {
+        if (quantity > 1) {
+            quantity--;
+            updateQuantityAndPrice();
+        }
+    });
+
+    // Evento de clique no botão de incremento
+    incrementButton.addEventListener('click', function () {
+        quantity++;
+        updateQuantityAndPrice();
+    });
+
+    // Atualize o valor inicial
+    updateQuantityAndPrice();
+});
+
