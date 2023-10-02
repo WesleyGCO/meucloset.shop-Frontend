@@ -5,22 +5,19 @@
 
 /* Estilos para o lado esquerdo (imagem) */
 .produto_esquerda {
-    flex: 1;
-    /* Ocupa 1 parte do espaço disponível */
+    flex: 2; /* Ocupa mais espaço (2 partes do espaço disponível) */
     padding: 20px;
     text-align: left;
 }
 
 .produto_esquerda img {
     max-width: 100%;
-    height: 95%;
-    padding-left: 75px;
+    max-height: 100%;
 }
 
 /* Estilos para o lado direito (informações) */
 .informacoes_direita {
-    flex: 1;
-    /* Ocupa 1 parte do espaço disponível */
+    flex: 1; /* Ocupa menos espaço (1 parte do espaço disponível) */
     padding: 10px;
     padding-left: 70px;
     text-align: left;
@@ -159,3 +156,20 @@ hr {
     border-top: 1px solid #000000;
 }
 
+.botao-cep {
+    padding: 10px 20px;
+    border-radius: 200px;
+    /* Bordas mais arredondadas */
+    background-color: #ffffff;
+    color: #000;
+    /* Cor do texto preto */
+    border: 2px solid #000;
+    /* Borda preta de 2px */
+    cursor: pointer;
+    width: 800px;
+    height: 70px;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 45px;
+}
