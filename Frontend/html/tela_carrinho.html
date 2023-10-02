@@ -35,40 +35,56 @@
                 <label>MEU CARRINHO</label>
             </div>
             <div class="referencial">
-                <label>Produto</label>
-                <label>Tamanho</label>
-                <label>Quantidade</label>
-                <label>Total</label>
+                <label class="legenda_produto">Produto</label>
+                <label class="legenda_tamanho">Tamanho</label>
+                <label class="legenda_quantidade">Quantidade</label>
+                <label class="legenda_total">Total</label>
             </div>
-            <div class="produto">
-                <div class="foto_produto">
-                    <img src="../imagens/Camiseta.png" alt="">
+            <div class="campos_carrinho">
+
+                <div class="produto">
+                    <div class="foto_produto">
+                        <img src="../imagens/Camiseta.png" alt="">
+                    </div>
+                    <div class="descricao_produto">
+                        <div class="nome_produto">Camiseta Smile New York</div>
+                        <div class="valor_produto">R$ 119,90</div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="botao_tamanho" id="tamanho-btn">
+                            <span></span>
+                        </button>
+                        <div class="dropdown-content" id="tamanho-dropdown">
+                            <a href="#" data-value="P">P</a>
+                            <a href="#" data-value="M">M</a>
+                            <a href="#" data-value="G">G</a>
+                            <a href="#" data-value="GG">GG</a>
+                        </div>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="botao-retangular" id="decrement">-</button>
+                        <span class="quantity">1</span>
+                        <button class="botao-retangular" id="increment">+</button>
+                    </div>
+                    <div class="price"><span id="total-price">119.90</span></div>
                 </div>
-                <div class="descricao_produto">
-                    <div class="nome_produto">Camiseta Smile New York</div>
-                    <div class="valor_produto">R$ 119,90</div>
-                </div>
-                <div class="dropdown">
-                    <button class="botao_tamanho" id="tamanho-btn">
-                        <span></span>
-                    </button>
-                    <div class="dropdown-content" id="tamanho-dropdown">
-                        <a href="#" data-value="P">P</a>
-                        <a href="#" data-value="M">M</a>
-                        <a href="#" data-value="G">G</a>
-                        <a href="#" data-value="GG">GG</a>
+                <div class="calcular_frete">
+                    <label class="legenda_calcular_frete">CALCULAR FRETE:</label>
+                    <input class="input_cep" type="text" id="cep" placeholder="Digite o CEP" maxlength="10"
+                        oninput="formatarCep(this)">
+                    <button class="botao_tamanho" onclick="calcularFrete()">Calcular</button>
+                    <div class="botoes_adicionais">
+                        <a class="botao_adicional" onclick="naoSeiCep()">Não sei meu CEP</a>
+                        <hr class="linha-pequena">
+                        <a class="botao_adicional" onclick="possuoCupom()">Possuo cupom</a>
                     </div>
                 </div>
-                <div class="quantity-control">
-                    <button class="botao-retangular" id="decrement">-</button>
-                    <span class="quantity">1</span>
-                    <button class="botao-retangular" id="increment">+</button>
-                </div>
-                <div class="price"><span id="total-price">119.90</span></div>
-
-
             </div>
-
+            <div class="finalizar_compra">
+                <div class="campo_finalizar_compra">
+                    <div class="price"><span id="preco_total">119.90</span></div>
+                </div>
+            </div>
 
         </div>
 

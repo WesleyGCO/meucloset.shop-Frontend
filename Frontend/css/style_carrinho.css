@@ -46,6 +46,82 @@
 
 /* ============================ CENTRAL ======================== */
 
+.finalizar_compra{
+    display: flex;
+    justify-content: end;
+    margin-right: 107px;
+    margin-top: 35px;
+}
+
+.campo_finalizar_compra{
+    width: 600px;
+    height: 300px;
+    background-color: #ffffff;
+    align-items: end;
+}
+
+
+
+.linha-pequena {
+    width: 565px;
+    height: 1px;
+    background-color: #b6b6b6;
+    margin: 5px 0;
+    border: none;
+}
+
+.botoes_adicionais{
+    margin-top: 18px;
+    margin-left: 22px;
+}
+
+.botao_adicional{
+    font-size: 17px;
+}
+
+.calcular_frete {
+    display: block;
+    width: 600px;
+    height: 220px;
+    background-color: #FFF;
+    margin-left: 90px;
+    margin-top: 30px;
+
+}
+
+.input_cep {
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 10px;
+    padding-left: 24px;
+    margin-left: 22px;
+}
+
+.legenda_calcular_frete {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 28px;
+    margin: 20px;
+    display: block;
+
+}
+
+
+.campos_carrinho {
+    display: flex;
+}
+
+
+
 .pagamentos {
     display: flex;
     justify-content: center;
@@ -61,7 +137,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .icones_pag {
@@ -75,7 +151,7 @@
 
 .carrinho {
     height: 1000px;
-    background-color: #f1f1f1;
+    background-color: #f7f7f7;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -88,14 +164,29 @@
 
 
 .referencial {
-    width: 1000px;
+    width: 1200px;
     display: flex;
-    justify-content: space-between;
     margin-left: 90px;
     font-size: 30px;
     padding-top: 90px;
 }
 
+.legenda_produto {
+    width: 458px;
+}
+
+.legenda_tamanho {
+    width: 160px;
+}
+
+.legenda_quantidade {
+    width: 230px;
+}
+
+.legenda_total {
+    width: 160px;
+    justify-content: end;
+}
 
 .produto {
     display: flex;
@@ -263,11 +354,11 @@
     font-weight: bold;
 }
 
-/* Estilos para a div de preço */
 .price {
+    width: 147px;
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    justify-content: end;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-style: italic;

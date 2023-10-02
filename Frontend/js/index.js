@@ -121,3 +121,31 @@ document.addEventListener('DOMContentLoaded', function () {
     updateQuantityAndPrice();
 });
 
+
+
+
+function formatarCep(input) {
+    // Remove caracteres não numéricos do valor atual
+    let cep = input.value.replace(/\D/g, '');
+
+    // Adiciona a máscara ao CEP (formato: 12345-678)
+    cep = cep.replace(/^(\d{5})(\d{1,3})$/, '$1-$2');
+
+    input.value = cep;
+}
+
+function naoSeiCep() {
+    // Exemplo de lógica para "Não sei meu CEP"
+    alert("Desculpe, essa funcionalidade ainda não está disponível.");
+}
+
+function possuoCupom() {
+    // Exemplo de lógica para "Possuo cupom"
+    let cupom = prompt("Digite seu cupom:");
+    if (cupom) {
+        alert("Cupom aplicado com sucesso!");
+        // Adicione aqui a lógica para aplicar o cupom ao preço total, por exemplo
+    } else {
+        alert("Nenhum cupom inserido.");
+    }
+}
