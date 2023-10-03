@@ -1,120 +1,259 @@
 /* ============================ CABEÇALHO / MENU SUPERIOR ======================== */
 
-.caixa_inicio {
-    display: block;
-
-}
-
 .caixa_icones_cabecalho {
     background-color: #FFF;
-    height: 150px;
+    height: 100px;
     border-radius: 0 0 10px 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .icones_direita,
 .icones_esquerda {
-    font-size: 22px;
+    font-size: 18px;
     display: flex;
-    width: 80%;
+    align-items: center;
     justify-content: space-evenly;
-}
-
-
-.icone {
-    margin: 0 20% 0 20%;
-    height: 45px;
-    font-size: 50px;
+    width: 80%;
     color: #DAA520;
 }
 
+.icone {
+    margin: 0 10px;
+    height: 30px;
+    font-size: 30px;
+    color: #DAA520;
+}
 
 .icone_pag {
-    width: 1000px;
-    margin: 0 20% 0 20%;
-    height: 45px;
-    font-size: 50px;
+    margin: 0 10px;
+    height: 30px;
+    font-size: 30px;
     color: #797979;
 }
 
 .logo_central {
-    height: 100px;
+    height: 80px;
 }
 
+@media screen and (min-width: 768px) {
+    .caixa_icones_cabecalho {
+        height: 150px;
+    }
+
+    .icone {
+        margin: 0 10px;
+        height: 30px;
+        font-size: 50px;
+        color: #DAA520;
+    }
+
+    .icone_pag {
+        margin: 0 10px;
+        height: 30px;
+        font-size: 30px;
+        color: #797979;
+    }
+
+    .logo_central {
+        height: 100px;
+    }
+}
 
 
 /* ============================ CENTRAL ======================== */
-
-.finalizar_compra{
+.finalizar_compra {
     display: flex;
     justify-content: end;
-    margin-right: 107px;
-    margin-top: 35px;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    margin-right: 50px;
 }
 
-.campo_finalizar_compra{
-    width: 600px;
+.campo_finalizar_compra {
+    width: 100%;
+    max-width: 600px;
     height: 300px;
     background-color: #ffffff;
-    align-items: end;
+    padding: 20px;
+    box-sizing: border-box;
 }
-
-
 
 .linha-pequena {
-    width: 565px;
+    width: 100%;
+    max-width: 565px;
     height: 1px;
     background-color: #b6b6b6;
-    margin: 5px 0;
-    border: none;
+    margin: 10px 0;
 }
 
-.botoes_adicionais{
-    margin-top: 18px;
-    margin-left: 22px;
+.botoes_adicionais {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.botao_adicional{
-    font-size: 17px;
+.botao_adicional {
+    font-size: 14px;
 }
 
 .calcular_frete {
-    display: block;
-    width: 600px;
-    height: 220px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     background-color: #FFF;
-    margin-left: 90px;
-    margin-top: 30px;
-
+    margin: 15px auto;
+    padding: 6px;
+    box-sizing: border-box;
 }
 
 .input_cep {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 50px;
     border-radius: 25px;
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #000000;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: bold;
-    margin: 0 10px;
-    padding-left: 24px;
-    margin-left: 22px;
+    margin-left: auto;
+    margin-right: 22px;
+    padding-left: 18px;
+    box-sizing: border-box;
 }
+
+
 
 .legenda_calcular_frete {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    font-size: 28px;
-    margin: 20px;
+    font-size: 24px;
+    margin: 10px 22px;
     display: block;
-
 }
 
+.botao_calcula_frete {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+
+    .finalizar_compra {
+        position: relative;
+        margin: 20px 135px;
+    }
+
+    .calcular_frete {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .campo_finalizar_compra {
+        width: 600px;
+        height: 300px;
+    }
+
+    .linha-pequena {
+        max-width: 565px;
+    }
+
+    .botoes_adicionais {
+        margin-top: 18px;
+        margin-left: 22px;
+    }
+
+    .botao_adicional {
+        font-size: 17px;
+    }
+
+    .calcular_frete {
+        width: 600px;
+        height: 220px;
+        margin-left: 90px;
+        margin-top: 30px;
+    }
+
+    .input_cep {
+        width: 350px;
+        margin: 4px 20px;
+    }
+
+    .legenda_calcular_frete {
+        font-size: 28px;
+    }
+}
+
+
+/*====================== SUBTOTAL/FINALIZAR COMPRA=======================*/
+.label_sub_total {
+    color: #797979;
+    font-style: italic;
+    margin: 10px 22px;
+    display: flex;
+    width: 60%;
+}
+
+.label_total {
+    color: #000000;
+    font-style: italic;
+    margin: 10px 22px;
+    display: flex;
+    width: 60%;
+}
+
+.sub_total {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#preco_total {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.botao_finaliza_compra {
+    width: 300px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #009053;
+    color: #ffffff;
+    border: 0px solid #000000;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Poppins',
+        sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.campo_botao_finaliza_compra {
+    display: flex;
+    justify-content: center;
+}
+
+/*=======================================================================*/
 
 .campos_carrinho {
     display: flex;
@@ -138,12 +277,6 @@
     justify-content: center;
     align-items: center;
 
-}
-
-.icones_pag {
-    display: flex;
-    margin: 0px;
-    color: #555;
 }
 
 
